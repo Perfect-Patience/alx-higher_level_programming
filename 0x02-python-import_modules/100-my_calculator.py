@@ -7,20 +7,16 @@ if __name__ == '__main__':
     from calculator_1 import add, sub, mul, div
     a = int(sys.argv[1])
     op = sys.argv[2]
-    b = int(sys.arv[3])
-    match op:
-        case "+":
-            ans = add(a ,b)
-        case "-":
-            ans = sub(a, b)
-        case "*":
-            ans = mul(a, b)
-        case "/":
-            ans = div(a, b)
-        case _:
-            print("Unknown operator. Available operators: +, -, *, and /")
-            sys.exit (1)
+    b = int(sys.argv[3])
+    if op == "+":
+        ans = add(a ,b)
+    elif op == "-":
+        ans = sub(a, b)
+    elif op == "*":
+        ans = mul(a, b)
+    elif op == "/":
+        ans = div(a, b)
+    else:
+        print("Unknown operator. Available operators: +, -, *, and /")
+        sys.exit (1)
     print("{} {} {} = {}".format(a, op, b, ans))
-            
-
-
