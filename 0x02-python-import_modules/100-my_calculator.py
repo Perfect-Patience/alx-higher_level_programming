@@ -15,6 +15,8 @@ if __name__ == '__main__':
     elif op == "*":
         ans = mul(a, b)
     elif op == "/":
+        if b == 0:
+            exit()
         ans = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, *, and /")
