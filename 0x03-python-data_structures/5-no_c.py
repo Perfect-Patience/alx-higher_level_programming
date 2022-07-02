@@ -5,5 +5,5 @@ def no_c(my_string):
         if my_string[i] == 'c' or my_string[i] == 'C':
             continue
         new_string[j] = my_string[i]
-        j++
+        j += 1
     return my_string
