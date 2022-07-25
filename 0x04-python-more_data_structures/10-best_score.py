@@ -1,10 +1,4 @@
 #!/usr/bin/python3
-from asyncio.windows_events import NULL
-from contextlib import nullcontext
-from queue import Empty
-from requests import NullHandler
-
-#!/usr/bin/python3
 def best_score(a_dictionary):
     if a_dictionary is None or  not a_dictionary:
         return None
